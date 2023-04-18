@@ -1,85 +1,20 @@
-﻿Console.WriteLine("Program wykonany podczas nauki programowania w C# podstawy w ramach zadania domowego z dnia 5");
-Console.WriteLine("Podaj liczbę, którą zbada program, pod kątem występowania poszczególnych cyfr od 0 do 9 : ");
-string liczba = Console.ReadLine();
+﻿using ChallengApp;
 
-int numer = int.Parse(liczba);
+Console.WriteLine("Program wykonany podczas nauki programowania w C# podstawy w ramach zadania ddodatkowego po dniu 6");
+Console.WriteLine("Program wyszykuje pracownika, który posiada najwyższą liczbą ocen. oraz wyświetla jego wynik.);
 
-string numberInString = numer.ToString();
+Employees Employees1 = new Employees("Jan" , "Kowalski", 0) ;
+Employees Employees2 = new Employees("Janina", "Kowalska", 0) ;
+Employees Employees3 = new Employees("Janeczek", "Kowalski", 0) ;
 
-char[] letters = numberInString.ToArray();
+Employees1.Add.Score(2);
+Employees1.Add.Score(4);
+Employees1.Add.Score(6);
 
-int counter0 = 0;
-int counter1 = 0;
-int counter2 = 0;
-int counter3 = 0;
-int counter4 = 0;
-int counter5 = 0;
-int counter6 = 0;
-int counter7 = 0;
-int counter8 = 0;
-int counter9 = 0;
+Employees2.Add.Score(3);
+Employees2.Add.Score(4);
+Employees2.Add.Score(6);
 
-foreach (char letter in letters)
-{
-    if (letter == '0')
-    {
-        counter0++;
-    }
-    else if (letter == '1')
-    {
-        counter1++;
-    }
-    else if (letter == '2')
-    {
-        counter2++;
-    }
-    else if (letter == '3')
-    {
-        counter3++;
-    }
-    else if (letter == '4')
-    {
-        counter4++;
-    }
-    else if (letter == '5')
-    {
-        counter5++;
-    }
-    else if (letter == '6')
-    {
-        counter6++;
-    }
-    else if (letter == '7')
-    {
-        counter7++;
-    }
-    else if (letter == '8')
-    {
-        counter8++;
-    }
-    else if (letter == '9')
-    {
-        counter9++;
-    }
-}
-
-Console.WriteLine("liczba zero wystąpiła: ");
-Console.WriteLine(counter0);
-Console.WriteLine("liczba jeden wystąpiła: ");
-Console.WriteLine(counter1);
-Console.WriteLine("liczba dwa wystąpiła: ");
-Console.WriteLine(counter2);
-Console.WriteLine("liczba trzy wystąpiła: ");
-Console.WriteLine(counter3);
-Console.WriteLine("liczba cztery wystąpiła: ");
-Console.WriteLine(counter4);
-Console.WriteLine("liczba pięć wystąpiła: ");
-Console.WriteLine(counter5);
-Console.WriteLine("liczba sześć wystąpiła: ");
-Console.WriteLine(counter6);
-Console.WriteLine("liczba siedem wystąpiła: ");
-Console.WriteLine(counter7);
-Console.WriteLine("liczba osiem wystąpiła: ");
-Console.WriteLine(counter8);
-Console.WriteLine("liczba dziewięć wystąpiła: ");
-Console.WriteLine(counter9);
+Employees3.Add.Score(6);
+Employees3.Add.Score(5);
+Employees3.Add.Score(4);
