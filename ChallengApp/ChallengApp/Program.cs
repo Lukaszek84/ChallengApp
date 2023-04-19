@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel.Design;
 
 Console.WriteLine("Program wykonany podczas nauki programowania w C# podstawy w ramach zadania dnia 6");
-Console.WriteLine("Program wyszykuje pracownika, który posiada najwyższą liczbą ocen. oraz wyświetla jego wynik.");
+Console.WriteLine("Program wyszykuje pracownika, który posiada najwyższą liczbą ocen. oraz wyświetla dane tych osób oraz ich wynik.");
 
 Employees employee1 = new Employees("Jan", "Kowalski", 45);
 Employees employee2 = new Employees("Janina", "Kowalska", 42);
