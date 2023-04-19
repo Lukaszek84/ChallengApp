@@ -1,10 +1,10 @@
 ﻿namespace ChallengApp
 {
-    internal class Employee
+    internal class Employees
     {
-        private List<int> Scores = new List<int>();
+        private List<int> scores = new List<int>();
 
-        public Employee(string fristName, string secondName, int age)
+        public Employees(string fristName, string secondName, int age)
         {
             this.FristName = fristName;
             this.SecondName = secondName;
@@ -19,12 +19,12 @@
         {
             get
             {
-                return this.Scores.Sum();
+                return this.scores.Sum();
             }
         }
         public void AddScore(int number)
         {
-            this.Scores.Add(number);
+            this.scores.Add(number);
         }
     }
 }
