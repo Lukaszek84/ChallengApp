@@ -5,37 +5,37 @@ using System.ComponentModel.Design;
 Console.WriteLine("Program wykonany podczas nauki programowania w C# podstawy w ramach zadania dnia 6");
 Console.WriteLine("Program wyszykuje pracownika, który posiada najwyższą liczbą ocen. oraz wyświetla jego wynik.");
 
-Employees Employee1 = new Employees("Jan", "Kowalski", 45);
-Employees Employee2 = new Employees("Janina", "Kowalska", 42);
-Employees Employee3 = new Employees("Janeczek", "Kowalski", 32);
+Employees employee1 = new Employees("Jan", "Kowalski", 45);
+Employees employee2 = new Employees("Janina", "Kowalska", 42);
+Employees employee3 = new Employees("Janeczek", "Kowalski", 32);
 
-Employee1.AddScore(10);
-Employee1.AddScore(4);
-Employee1.AddScore(6);
-Employee1.AddScore(5);
-Employee1.AddScore(6);
+employee1.AddScore(10);
+employee1.AddScore(4);
+employee1.AddScore(6);
+employee1.AddScore(5);
+employee1.AddScore(6);
 
-Employee2.AddScore(10);
-Employee2.AddScore(4);
-Employee2.AddScore(10);
-Employee2.AddScore(8);
-Employee2.AddScore(4);
+employee2.AddScore(10);
+employee2.AddScore(4);
+employee2.AddScore(10);
+employee2.AddScore(8);
+employee2.AddScore(4);
 
-Employee3.AddScore(6);
-Employee3.AddScore(5);
-Employee3.AddScore(4);
-Employee3.AddScore(6);
-Employee3.AddScore(7);
+employee3.AddScore(6);
+employee3.AddScore(5);
+employee3.AddScore(4);
+employee3.AddScore(6);
+employee3.AddScore(7);
 
-if (Employee1.Result > Employee2.Result && Employee1.Result > Employee3.Result)
+if (employee1.Result > employee2.Result && employee1.Result > employee3.Result)
 {
-    Console.WriteLine(Employee1.Result + " Pierwszy pracownik zdobył najwieksza ocenę " + Employee1.FristName + " " + Employee1.SecondName + " " + Employee1.Age);
+    Console.WriteLine($"{employee1.Result} Pierwszy pracownik zdobył najwieksza ocenę {employee1.FristName} {employee1.SecondName} {employee1.Age}");
 }
-else if (Employee2.Result > Employee3.Result && Employee2.Result > Employee1.Result)
+else if (employee2.Result > employee3.Result && employee2.Result > employee1.Result)
 {
-    Console.WriteLine(Employee2.Result + " Drugi pracownik zdobył najwieksza ocenę " + Employee2.FristName + " " + Employee2.SecondName + " " + Employee2.Age);
+    Console.WriteLine($"{employee2.Result} Drugi pracownik zdobył najwieksza ocenę {employee2.FristName} {employee2.SecondName} {employee2.Age}");
 }
-else if (Employee3.Result > Employee2.Result && Employee3.Result > Employee1.Result)
+else if (employee3.Result > employee2.Result && employee3.Result > employee1.Result)
 {
-    Console.WriteLine(Employee3.Result + " Trzeci pracownik zdobył najwieksza ocenę " + Employee3.FristName + " " + Employee3.SecondName + " " + Employee3.Age);
+    Console.WriteLine($"{employee3.Result} Trzeci pracownik zdobył najwieksza ocenę {employee3.FristName} {employee3.SecondName} {employee3.Age}");
 }
