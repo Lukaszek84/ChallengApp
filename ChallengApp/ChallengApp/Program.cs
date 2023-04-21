@@ -5,9 +5,9 @@ using System.ComponentModel.Design;
 Console.WriteLine("Program wykonany podczas nauki programowania w C# podstawy w ramach zadania dnia 6");
 Console.WriteLine("Program wyszykuje pracownika, który posiada najwyższą liczbą ocen. oraz wyświetla dane tych osób oraz ich wynik.");
 
-Employees employee1 = new Employees("Jan", "Kowalski", 45);
-Employees employee2 = new Employees("Janina", "Kowalska", 42);
-Employees employee3 = new Employees("Janeczek", "Kowalski", 32);
+Employee employee1 = new Employee("Jan", "Kowalski", 45);
+Employee employee2 = new Employee("Janina", "Kowalska", 42);
+Employee employee3 = new Employee("Janeczek", "Kowalski", 32);
 
 employee1.AddScore(10);
 employee1.AddScore(4);
@@ -39,3 +39,7 @@ else if (employee3.Result > employee2.Result && employee3.Result > employee1.Res
 {
     Console.WriteLine($"{employee3.Result} Trzeci pracownik zdobył najwieksza ocenę {employee3.FristName} {employee3.SecondName} {employee3.Age}");
 }
+
+int lagerValue;
+lagerValue = Math.Max(Math.Max(employee1.Result, employee2.Result), employee3.Result);
+Console.WriteLine(lagerValue);
