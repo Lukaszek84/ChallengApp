@@ -17,7 +17,7 @@ employee1.AddScore(6);
 
 employee2.AddScore(10);
 employee2.AddScore(4);
-employee2.AddScore(10);
+employee2.AddScore(-10);
 employee2.AddScore(8);
 employee2.AddScore(4);
 

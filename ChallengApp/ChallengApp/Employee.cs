@@ -1,6 +1,6 @@
 ﻿namespace ChallengApp
 {
-    internal class Employee
+    public class Employee
     {
         private List<int> scores = new List<int>();
 
